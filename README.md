@@ -1,2 +1,2 @@
 # terminal-configs
-terminal configurations for different platforms I use.
+hey future me 👋! hopefully past you set this up correct!
