@@ -1,80 +1,43 @@
 # development-setup
-hey future me 👋 hopefully past you set this up correct!
 
-## Prerequisites
-make sure you have these before you start.
+These are the steps (hopefully) to get setup with with a development eviroment that I'm comfortable with.
 
->[!NOTE]
-> if on macos use run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` to install brew.
+## What to install
 
-#### `git`
-```bash
-sudo apt install git
-```
+### Basics
 
-#### `curl`
-```bash
-sudo apt install curl
-```
+- `git`
+- `curl`
+- `sshagent` -> Look at GitHub docs to setup.
+- `gpg`      -> Look at GitHub docs to setup.
 
-#### `zsh`
-```bash
-sudo apt install zsh
-chsh -s $(which zsh)
-```
+### Others
 
-#### `oh-my-zsh`
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+- `tmux` -> Look at TPM docs to fully setup.
+- `zsh`
+    - `oh-my-zsh`
+- `nvim` -> Look at Packer.vim docs to fully setup.
+- `tree`
+- `ripgpg` -> Not downloadable via `apt`.
 
-#### `oh-my-zsh plugins`
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-```
+### Languages
 
-#### `oh-my-posh`
-for linux & wsl
-```bash
-curl -s https://ohmyposh.dev/install.sh | bash -s
-```
+- `python`
+- `go`
+- `nvm` -> `node` -> `npm`
+- `sqlite`
 
-for macos
-```bash
-brew install jandedobbeleer/oh-my-posh/oh-my-posh
-brew update && brew upgrade oh-my-posh
-```
+### Configuration
 
-#### `oh-my-posh theme`
-```bash
-mkdir ~/.oh-my-posh-themes
-curl -o ~/.oh-my-posh-themes/<theme-file-name> https://github.com/JanDeDobbeleer/oh-my-posh/main/themes/<theme-file-name>
-```
+- `stow` -> `cd` into dotfiles and run `stow .`
 
-#### `tmux`
-```bash
-sudo apt install tmux
-```
+Most configuration (other that git) will be in the [dotfiles repository](https://github.com/gabrielg2020/dotfiles).
 
-#### `nvm`, `node`, `npm`
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-nvm install node
-nvm use node
-```
+NeoVim configuration will be in the [neovim-config repository]().
 
-#### OS specific
-go to `./terminal/<os>/README.md` for more specific prerequisites.
+Both of these repositories will have their own instructions.
 
-#### language
-look at the languages website.
+### Extas
 
-| language | website                                                                                                                                                                                          |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| go       | [here](https://go.dev/doc/install)                                                                                                                                                               |
-| python   | [macos/wsl](https://www.python.org/downloads/), [linux](https://www.geeksforgeeks.org/how-to-install-python-on-linux/)                                                                           |
-| php      | [windows](https://www.php.net/manual/en/install.windows.php), [macos](https://www.php.net/manual/en/install.macosx.packages.php). [linux](https://www.php.net/manual/en/install.unix.debian.php) |
-
-## Tools
-Read `./tools/README.md`
+- Any Nerd Font.
+- `wscat` -> npm package.
