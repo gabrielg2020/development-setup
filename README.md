@@ -27,6 +27,16 @@ These are the steps (hopefully) to get setup with with a development eviroment t
 - `nvm` -> `node` -> `npm`
 - `sqlite`
 
+### Applications
+
+> [!NOTE]
+> If you use different application please change the [i3 config](https://github.com/gabrielg2020/dotfiles/blob/main/.config/i3/config), specifically `# Add startup apps`
+- `FireFox`
+- `Discord`
+- `Spotify`
+- `gnome-terminal`
+- `KeePassXC`
+
 ### Configuration
 
 - `stow` -> `cd` into dotfiles and run `stow .`
